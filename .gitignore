@@ -1,0 +1,5 @@
+
+# Ignore all files and folders inside repositories/
+repositories/*
+csv/*
+log/*
