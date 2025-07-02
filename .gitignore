@@ -1,0 +1,11 @@
+import configparser
+
+config = configparser.ConfigParser()
+config.read('config.ini')
+
+folders = config.get('DEFAULT', 'FOLDER_REPOSITORIES', fallback='')
+for item in folders.split(','):
+    item = item.strip()
+    if item:
+        print(f"{item}/")   # Ignore folder
+        print(f"{item}")    # Ignore file
