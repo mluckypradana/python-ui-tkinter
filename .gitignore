@@ -10,5 +10,6 @@ for item in folders.split(','):
         print(f"{item}/")   # Ignore folder
         print(f"{item}")    # Ignore file
 
+
 print("repositories/")
 print("repositories/*")
